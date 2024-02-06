@@ -1,0 +1,61 @@
+<div class="relative">
+  <img src="../../../assets/bg-home.jpg" alt="">
+  
+  <div class="absolute top-1/2 -translate-y-1/2 w-full flex">
+    <div class="mx-auto max-w-5xl">
+      <div class="p-5 rounded-lg bg-white">
+        <h1>Encontre um mate</h1>
+        <h1>Encontre um lar</h1>
+        
+        <nav>
+          <div>
+            <span>Preciso de um lar - precos, quartos, banheiros, estacionamentos</span>
+          </div>
+          <div>
+            <span>Preciso de um parceiro - preco, idade, genero</span>
+          </div>
+        </nav>
+      
+        <form action=""></form>
+      </div>
+
+      <p>Explorar</p>
+    </div>
+  </div>
+</div>
+
+<main class="max-w-5xl mx-auto my-20">
+  
+  <p>Publicar</p>
+
+  <div class="my-20">
+    <ul class="flex gap-[1px] my-10 border-b">
+      <li class="p-3 border-t border-x rounded-t -m-[1px] bg-white"><button>Todos</button></li>
+      <li class="p-3 bg-white"><button>Acomodações</button></li>
+      <li class="p-3 bg-white"><button>Companheiros</button></li>
+    </ul>
+
+    <div class="my-10">
+      FILTROS
+    </div>
+
+    <ul class="grid grid-cols-3 gap-10 px-5">
+      @for (mate of mates; track mate.id) {
+        <li class="shadow rounded-xl">
+          <img src="" alt="">
+          <div class="p-5">
+            <h3>{{ mate.name }}</h3>
+            <div>
+              A$ {{ mate.budget }} por semana -
+              {{ mate.gender }}, {{ mate.age }} anos
+              <p>{{ mate.description }}</p>
+            </div>
+          </div>
+        </li>
+      } @empty {
+        Empty list of mates
+      }
+    </ul>
+
+  </div>
+</main>

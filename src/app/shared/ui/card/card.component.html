@@ -7,9 +7,9 @@
         <div class="flex gap-1 text-gray-500">
           <p>{{ mate.budget | currency:'AUD':'symbol':'1.0-0' }} semanal</p>
           <span>|</span>
-          <p>{{ mate.gender }}</p>
-          <span>•</span>
           <p>{{ mate.age }} anos</p>
+          <span>•</span>
+          <p>{{ mate.gender | gender }}</p>
         </div>
         <p class="text-gray-500">{{ mate.description}}</p>
       </div>

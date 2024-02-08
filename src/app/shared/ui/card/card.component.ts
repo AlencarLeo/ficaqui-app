@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { GenderPipe } from '../../../core/pipes/gender.pipe';
 
 @Component({
   selector: 'app-card',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    GenderPipe
   ],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'

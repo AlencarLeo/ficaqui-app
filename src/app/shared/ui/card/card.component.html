@@ -1,11 +1,11 @@
 <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-5">
   @for (mate of mates; track mate.id) {
-    <li class="flex flex-col max-w-80 mx-auto">
+    <li class="flex flex-col max-w-80 mx-auto cursor-pointer">
       <img src="../../../../assets/leonardo.jpeg" class="rounded-lg h-64 object-cover" alt="">
       <div class="mt-2">
         <h3 class="font-bold text-gray-700 text-lg">{{ mate.name }}</h3>
         <div class="flex gap-1 text-gray-500">
-          <p>A$ {{ mate.budget }} semanal</p>
+          <p>{{ mate.budget | currency:'AUD':'symbol':'1.0-0' }} semanal</p>
           <span>|</span>
           <p>{{ mate.gender }}</p>
           <span>•</span>

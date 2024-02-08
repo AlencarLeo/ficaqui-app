@@ -1,0 +1,17 @@
+<ul class="grid grid-cols-3 gap-10 px-5">
+  @for (mate of mates; track mate.id) {
+    <li class="shadow rounded-xl">
+      <img src="" alt="">
+      <div class="p-5">
+        <h3>{{ mate.name }}</h3>
+        <div>
+          A$ {{ mate.budget }} por semana -
+          {{ mate.gender }}, {{ mate.age }} anos
+          <p>{{ mate.description }}</p>
+        </div>
+      </div>
+    </li>
+  } @empty {
+    Empty list of mates
+  }
+</ul>

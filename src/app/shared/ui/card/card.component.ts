@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
-import { CardComponent } from '../../shared/ui/card/card.component';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-card',
   standalone: true,
-  imports: [
-    CardComponent
-  ],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  imports: [],
+  templateUrl: './card.component.html',
+  styleUrl: './card.component.css'
 })
-export class HomeComponent {
+export class CardComponent {
   mates = [
     {
       id: 1,

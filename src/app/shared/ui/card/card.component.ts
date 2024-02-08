@@ -11,7 +11,7 @@ export class CardComponent {
   mates = [
     {
       id: 1,
-      name: 'Leonardo ALencar',
+      name: 'Leonardo Alencar',
       budget: 300,
       age: 21,
       gender: 1,

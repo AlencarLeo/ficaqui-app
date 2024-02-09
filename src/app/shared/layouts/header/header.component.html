@@ -1,10 +1,23 @@
 <header class="border-b border-solid border-gray-200">
-  <div class="max-w-5xl mx-auto flex px-5 py-2 justify-between">
+  <div class="grid grid-cols-3 px-5 py-2 justify-between">
     <a href="/">
       <img src="../../../assets/logo.png" alt="logo" class="h-16">
     </a>
     
-    <nav class="flex items-center gap-5">
+    <div>
+      <ul class="flex justify-center gap-4">
+        <li>Todos</li>
+        <li>Companheiros</li>
+        <li>Acomodações</li>
+      </ul>
+
+      <div>
+        <input type="text" class="border">
+        <button class="bg-blue-600">o</button>
+      </div>
+    </div>
+
+    <nav class="flex items-center gap-5 bg-red-100">
       <!-- <ul class="flex items-center text-sm">
         @for (need of needs; track need.id) {
           <li class="px-3 py-2 text-gray-500 hover:text-gray-700">
@@ -14,6 +27,8 @@
           </li>
         }
       </ul> -->
+
+      <button>Compartilhe seu perfil ou espaço</button>
 
       <button class="px-3 py-2 rounded hover:bg-gray-100 transition-colors">
         <span class="uppercase text-blue-600 font-bold text-sm">Entrar</span>

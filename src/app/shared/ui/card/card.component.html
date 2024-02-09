@@ -1,4 +1,4 @@
-<ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-10 px-5">
+<ul class="grid grid-cols-6 gap-10 px-5">
   @for (mate of mates; track mate.id) {
     <li class="flex flex-col max-w-80 mx-auto cursor-pointer">
       <img src="../../../../assets/leonardo.jpeg" class="rounded-lg h-64 object-cover" alt="">
@@ -9,10 +9,9 @@
           <span class="text-gray-500">•</span>
           <p class="text-gray-500">{{ mate.gender | gender }}</p>
         </div>
-        <p class="text-gray-500">{{ mate.description}}</p>
-        <p class="text-gray-500">{{ mate.budget | currency:'AUD':'symbol':'1.0-0' }} semanal</p>
+        <p class="text-gray-500 text-xs">Dispovível agora</p>
+        <p class="text-gray-700">{{ mate.budget | currency:'AUD':'symbol':'1.0-0' }} semanal</p>
       </div>
-      <p class="text-gray-500 text-xs">Dispovível agora</p>
     </li>
   } @empty {
     Empty list of mates

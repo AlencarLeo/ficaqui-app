@@ -7,8 +7,7 @@ type Mates = {
   name: string,
   budget: number,
   age: number,
-  gender: number,
-  description: string 
+  gender: number
 }
 
 @Component({

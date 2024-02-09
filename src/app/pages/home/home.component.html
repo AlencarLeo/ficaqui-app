@@ -1,45 +1,25 @@
-<div class="relative">
-  <img src="../../../assets/bg-home.jpg" alt="">
-  
-  <div class="absolute top-1/2 -translate-y-1/2 w-full flex">
-    <div class="mx-auto max-w-5xl">
-      <div class="p-5 rounded-lg bg-white">
-        <h1>Encontre um mate</h1>
-        <h1>Encontre um lar</h1>
-        
-        <nav>
-          <div>
-            <span>Preciso de um lar - precos, quartos, banheiros, estacionamentos</span>
-          </div>
-          <div>
-            <span>Preciso de um parceiro - preco, idade, genero</span>
-          </div>
-        </nav>
-      
-        <form action=""></form>
-      </div>
+<main class="mx-auto my-12 px-6 md:px-10 xl:px-20">  
+  <!-- <p>Publicar</p> -->
 
-      <p>Explorar</p>
-    </div>
-  </div>
-</div>
-
-<main class="max-w-5xl mx-auto my-20">
-  
-  <p>Publicar</p>
-
-  <div class="my-20">
-    <ul class="flex gap-[1px] my-10 border-b">
-      <li class="p-3 border-t border-x rounded-t -m-[1px] bg-white"><button>Todos</button></li>
-      <li class="p-3 bg-white"><button>Acomodações</button></li>
-      <li class="p-3 bg-white"><button>Companheiros</button></li>
+  <div class="flex justify-between my-12">
+    <ul class="flex gap-4">
+      @for (city of cities; track city.id) {
+        <li 
+          class="
+            font-bold 
+            text-sm 
+            text-gray-500 
+            hover:text-black
+            transition-colors
+          "
+        ><button>{{ city.name }}</button></li>
+      }
     </ul>
-
-    <div class="my-10">
+    
+    <div class="">
       FILTROS
     </div>
-
-    <app-card />
-
   </div>
+
+  <app-card [mates]="mates"/>
 </main>

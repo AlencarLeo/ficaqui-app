@@ -11,6 +11,33 @@ import { CardComponent } from '../../shared/ui/card/card.component';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
+  cities = [
+    {
+      id: 1,
+      name: "Sydney"
+    },
+    {
+      id: 2,
+      name: "Melbourne"
+    },
+    {
+      id: 3,
+      name: "Adelaide"
+    },
+    {
+      id: 4,
+      name: "Perth"
+    },
+    {
+      id: 5,
+      name: "Brisbane"
+    },
+    {
+      id: 6,
+      name: "Gold Coast"
+    }
+  ]
+
   mates = [
     {
       id: 1,
@@ -30,6 +57,38 @@ export class HomeComponent {
     },
     {
       id: 3,
+      name: 'Gabriela Silva',
+      budget: 340,
+      age: 19,
+      gender: 2,
+      description: "During the week I love to get up early and stay active going on walks, working out, etc. but I also don’t mind going for a couple drinks on the weekends. I like to keep my space pretty clean & am on the quieter side but I’m always down to chat since I love getting to know new people!",
+    },
+    {
+      id: 4,
+      name: 'Gabriela Silva',
+      budget: 340,
+      age: 19,
+      gender: 2,
+      description: "During the week I love to get up early and stay active going on walks, working out, etc. but I also don’t mind going for a couple drinks on the weekends. I like to keep my space pretty clean & am on the quieter side but I’m always down to chat since I love getting to know new people!",
+    },
+    {
+      id: 5,
+      name: 'Gabriela Silva',
+      budget: 340,
+      age: 19,
+      gender: 2,
+      description: "During the week I love to get up early and stay active going on walks, working out, etc. but I also don’t mind going for a couple drinks on the weekends. I like to keep my space pretty clean & am on the quieter side but I’m always down to chat since I love getting to know new people!",
+    },
+    {
+      id: 6,
+      name: 'Gabriela Silva',
+      budget: 340,
+      age: 19,
+      gender: 2,
+      description: "During the week I love to get up early and stay active going on walks, working out, etc. but I also don’t mind going for a couple drinks on the weekends. I like to keep my space pretty clean & am on the quieter side but I’m always down to chat since I love getting to know new people!",
+    },
+    {
+      id: 7,
       name: 'Gabriela Silva',
       budget: 340,
       age: 19,
